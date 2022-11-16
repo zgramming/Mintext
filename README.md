@@ -22,21 +22,22 @@ Starter Template Admin Dashboard built in with stack :
 - Next JS Layouting Management
 - Customize Header & Sider Menu
 - Built in component based on Ant Design including : 
-    a. Form
-    b. Table
+    - Form
+    - Table
+
 - Login Page
 - Management User Page including :
-    a. Management User Group
-    b. Management User
-    c. Modul
-    d. Menu
-    e. Access Modul
-    f. Access Menu
-    g. Master Category
-    h. Master Data
-    i. Documentation
-    j. Parameter
-    k. Parent & Children Menu Example
+    - Management User Group
+    - Management User
+    - Modul
+    - Menu
+    - Access Modul
+    - Access Menu
+    - Master Category
+    - Master Data
+    - Documentation
+    - Parameter
+    - Parent & Children Menu Example
 - Cookie Session Management Login & Logout
 
 
