@@ -25,14 +25,14 @@ const AdminLayout = (props: { children?: React.ReactNode }) => {
       >
         <div className="relative h-16 flex justify-center items-center">
           <Link href={"/"}>
-            <a>
-              <Image
-                alt="Failed load image..."
-                src={Logo}
-                height={100}
-                width={100}
-              />
-            </a>
+
+            <Image
+              alt="Failed load image..."
+              src={Logo}
+              height={100}
+              width={100}
+            />
+
           </Link>
         </div>
         <SiderMenu />

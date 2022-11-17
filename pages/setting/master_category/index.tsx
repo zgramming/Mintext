@@ -55,13 +55,15 @@ const MasterCategoryPage = () => {
 			align: 'center',
 			render: (val) => {
 				return <>
-					<Link href={{
-						pathname: "/setting/master_data",
-						query: { category_code: 'EXAMPLE' }
-					}} >
-						<a className='font-bold text-center'>0</a>
+					<Link
+                        href={{
+                            pathname: "/setting/master_data",
+                            query: { category_code: 'EXAMPLE' }
+                        }}
+                        className='font-bold text-center'>
+						0
 					</Link>
-				</>
+				</>;
 			}
 		},
 		{ key: "status", dataIndex: "status", title: "Status" },
