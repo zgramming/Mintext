@@ -3,7 +3,12 @@
 console.log({
   message: "Tailwind.config.js loaded configuration",
   config: {
-    primaryColor: process.env["NEXT_PUBLIC_TAILWIND_PRIMARY_COLOR"],
+    primary: "#277BC0",
+    accent: "#f58b4f",
+    success: "#00D8AC",
+    info: "#5CB8E4",
+    warning: "#ffb200",
+    error: "#FF4A4A",
   },
 });
 
@@ -15,12 +20,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: process.env["NEXT_PUBLIC_TAILWIND_PRIMARY_COLOR"],
-        accent: process.env["NEXT_PUBLIC_TAILWIND_ACCENT_COLOR"],
-        success: process.env["NEXT_PUBLIC_TAILWIND_SUCCESS_COLOR"],
-        info: process.env["NEXT_PUBLIC_TAILWIND_INFO_COLOR"],
-        warning: process.env["NEXT_PUBLIC_TAILWIND_WARNING_COLOR"],
-        error: process.env["NEXT_PUBLIC_TAILWIND_ERROR_COLOR"],
+        primary: "#277BC0",
+        accent: "#f58b4f",
+        success: "#00D8AC",
+        info: "#5CB8E4",
+        warning: "#ffb200",
+        error: "#FF4A4A",
       },
     },
   },

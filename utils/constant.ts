@@ -1,4 +1,5 @@
-export const primaryColor = "#1572A1";
+export const primaryColor = "#277BC0";
+export const secondaryColor = "#f58b4f";
 
 export const AVAILABLE_ACCESS_MENU = [
   "add",

@@ -1,26 +1,18 @@
-import "antd/dist/antd.variable.min.css";
+import "antd/dist/reset.css";
 import "../styles/globals.css";
 
-import { ConfigProvider, Layout } from "antd";
+import { ConfigProvider } from "antd";
 import { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import NextNProgress from "nextjs-progressbar";
 import React, { ReactElement, ReactNode } from "react";
 
-import HeaderMenu from "../components/layout/header_menu";
-import SiderMenu from "../components/layout/sider_menu";
-import MyBreadcrum from "../components/reusable/breadcrumb";
-import Logo from "../public/images/logo_color.png";
+import AdminLayout from "../components/layout/layout";
 import { primaryColor } from "../utils/constant";
 import { convertRoutePathToArray } from "../utils/function";
 
 import type { AppProps } from "next/app";
-import AdminLayout from "../components/layout/layout";
-const { Content, Footer, Sider } = Layout;
-
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
 };
@@ -54,7 +46,13 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       </Head>
       <NextNProgress />
 
-      <ConfigProvider>
+      <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: primaryColor,
+          },
+        }}
+      >
         <Component {...pageProps} />
       </ConfigProvider>
     </>
